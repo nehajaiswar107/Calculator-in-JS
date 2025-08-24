@@ -1,0 +1,94 @@
+/* Style.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Calculator {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 320px;
+}
+
+.Calculator input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  font-size: 20px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+#number-input {
+  font-size: 22px;
+}
+
+#result {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.button {
+  margin-top: 15px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.cal-button {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 5px;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+}
+
+.cal-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.cal-button:active {
+  transform: scale(0.95);
+  background: #00ffcc;
+  color: #333;
+}
+.cartoon {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  width: 120px;
+  transform: rotate(10deg);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(10deg); }
+  50% { transform: translateY(-15px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(10deg); }
+}
